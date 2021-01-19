@@ -1,0 +1,208 @@
+// mediaqueris
+
+@media (min-width: 1440px) {
+  // Estilos al header y al nav
+  header {
+    .container-header {
+      padding: 26px 100px;
+      width: 100%;
+      .box-logo {
+        width: 36px;
+        height: 36px;
+      }
+      // estilos al nav
+      .menu-hamburguesa {
+        .input-menu {
+          display: none;  
+        }
+        .label-menu{
+          display: none;}
+        .menu-desplegable {
+          display: block;
+          position: relative;
+          left: auto;
+          top: auto;
+          width: auto;
+          .list-menu {
+            display: flex;
+            marging-bottom: 0px;
+            li {
+              background-color: $primary-color;
+              padding: 0px;
+              padding-right: 48px;
+              .links-menu {
+                color: $letter-color;
+                padding: 0;
+              }
+            }
+            li:last-of-type {
+              padding-right: 0px;
+            }
+            li > .links-menu:hover {
+              text-decoration-line: line-through;
+              color: $background-button;
+            }
+          }
+        } 
+      }
+    }
+  }
+  // Estilos desktop que son constantes en el proyecto
+  .background-blue {
+    &::after {
+      top: 70px;
+    }
+  }
+  .subtitles {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  main {
+    // Estilos desktop a la seccion inicial 
+    .container-intro {
+      flexwrap: wrap;
+      padding: 0px 200px;
+      margin-top: 120px;
+      .title-intro {
+        font-size: 64px;
+        padding-left: 0;
+        line-height: 64px;
+        br {
+          display: none;
+        }
+      }
+      .description {
+        padding: 0;
+        width: 628px;
+      }
+      .button-intro {
+        width: 100%;
+        font-size: 18px;
+        padding: 16px 0px;
+        margin: 0;
+        margin-top: 52px;
+      }
+    }
+    // Estilos desktop a la seccion de episodios 
+    .section-episodes {
+      padding: 170px 100px;
+      margin: 0;
+      .tittle-episodios {
+        padding: 0px 100px 26px;
+      }
+      .container-episodios {
+        margin: -36px;
+        padding: 0;
+        .box-episodio {
+          width: 50%;
+          max-width: 584px;
+          margin: 0px;
+          padding: 36px ;
+          &:last-child {
+            margin: 0px;
+          }
+        }
+      }
+    }
+    // Estilos desktop a la seccion del Celular y descripcion
+    .section-about-us {
+      margin: 0;
+      display: flex;
+      align-items: center;
+
+      .container-img-cel {
+        max-width: 460px;
+        max-height: 665px;
+        margin: -50px 62px 0 200px;
+      }
+      .content {
+        padding: 27px 16px 54px;
+        .title-section-info {
+          padding: 8px 0 24px;
+        }
+        .description {
+          width: 464px;
+        }
+      }
+    }
+    // Estilos desktop a la seccion de Invitados
+    .section-interviews {
+      margin: 64px 0;
+      padding-top: 50px;
+      .title-images {
+        padding: 0px 200px 36px;
+      }
+      .container-images {
+        .box-image {
+          width: 33%;
+        }
+      }
+    }
+    // Estilos desktop a la seccion de Topicos
+    .section-topics {
+      .title-topics {
+        padding: 0px 200px 56px;
+      }
+      .container-group-topics {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        .container-topic {
+          width: 260px;
+          height: 130px;
+          margin-bottom: 0;
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+          .box-icon {
+            max-width: 260px;
+            padding-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+  // Estilos desktop a las ultimas novedades
+  .section-latest-news {
+    clip-path: polygon(0 32%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: 34px;    
+    .container-latest-news {
+    padding-top: 0px;
+      align-content: center;
+      .title-latest-news {
+        text-align: center; 
+        margin: 213px auto 0;
+      }
+      .button-final {
+        z-index: 4;
+        margin: 36px auto 151px;
+        width: 345px;
+      }
+    }
+  }
+  // Estilos desktop al Footer
+  footer {
+    margin: 36px 0px 31px;
+    .container-footer {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      .line-final {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0 100px;
+      }
+      .container-logos-social-media {
+        margin: 0 100px;
+        .icono {
+          width: 18px;
+          padding-right: 52px;
+        }
+      }
+    }
+  }
+}

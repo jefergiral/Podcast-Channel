@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  min-width: 200px;
+  background-color: #fff;
+  position: relative;
+}
+header .container-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px 16px;
+  width: 100%;
+}
+header .container-header .box-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+header .container-header .box-logo .logo-podcast {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .container-header .menu-hamburguesa {
+  display: flex;
+  align-items: center;
+}
+header .container-header .menu-hamburguesa .input-menu {
+  visibility: hidden;
+  width: 18px;
+  height: 100%;
+}
+header .container-header .menu-hamburguesa .label-menu {
+  width: 18px;
+  height: 100%;
+  padding: 3px 0px;
+  cursor: pointer;
+}
+header .container-header .menu-hamburguesa .label-menu .custom-bars {
+  position: relative;
+  background-color: #060A24;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+header .container-header .menu-hamburguesa .label-menu .custom-bars::after, header .container-header .menu-hamburguesa .label-menu .custom-bars::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+  top: -4px;
+}
+header .container-header .menu-hamburguesa .label-menu .custom-bars::after {
+  top: 4px;
+}
+header .container-header .menu-hamburguesa .input-menu:checked ~ .label-menu .custom-bars {
+  transform: rotate(135deg);
+}
+header .container-header .menu-hamburguesa .input-menu:checked ~ .label-menu .custom-bars::after, header .container-header .menu-hamburguesa .input-menu:checked ~ .label-menu .custom-bars::before {
+  top: 0;
+  transform: rotate(90deg);
+}
+header .container-header .menu-hamburguesa .input-menu:checked ~ .menu-desplegable {
+  display: block;
+}
+header .container-header .menu-hamburguesa .menu-desplegable {
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 44px;
+  width: 100%;
+}
+header .container-header .menu-hamburguesa .menu-desplegable .list-menu {
+  list-style: none;
+  margin-bottom: 16px;
+}
+header .container-header .menu-hamburguesa .menu-desplegable .list-menu li {
+  background-color: #0000EC;
+  padding: 16px 0 0 16px;
+}
+header .container-header .menu-hamburguesa .menu-desplegable .list-menu li .links-menu {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+header .container-header .menu-hamburguesa .menu-desplegable .list-menu li:last-of-type {
+  padding-bottom: 16px;
+}
+
+.subtitles {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 42px;
+  font-weight: 400;
+}
+
+.description {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #060A24;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+
+.background-blue {
+  position: relative;
+}
+.background-blue::after {
+  position: absolute;
+  content: "";
+  background-color: #0000EC;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 16px;
+  left: 0;
+  z-index: 0;
+  transform: skew(0, -6deg);
+}
+
+.box-button {
+  width: calc(100%-32px);
+  max-width: 288px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #060A24;
+  background-color: #00F3BB;
+  font-weight: 600;
+  border: none;
+  opacity: 100%;
+  margin: 20px 16px;
+}
+
+main {
+  width: 100%;
+}
+main .container-intro {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 29px;
+  z-index: 1;
+}
+main .container-intro .title-intro {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #060A24;
+  padding-left: 16px;
+  font-weight: 350;
+  line-height: 42px;
+}
+main .container-intro .description {
+  padding: 16px;
+}
+main .button-intro {
+  z-index: 1;
+  align-self: left;
+  padding: 13px 96px;
+}
+main .button-intro:hover {
+  cursor: pointer;
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #fff;
+}
+main .section-episodes {
+  width: 100%;
+  height: auto;
+  padding: 64px 0px;
+}
+main .section-episodes .tittle-episodios {
+  color: #fff;
+  position: relative;
+  padding: 10px 0px 15px 16px;
+  z-index: 2;
+}
+main .section-episodes .container-episodios {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  z-index: 2;
+}
+main .section-episodes .container-episodios .box-episodio {
+  margin: 11px;
+  width: 100%;
+  max-width: 600px;
+}
+main .section-episodes .container-episodios .box-episodio:last-child {
+  margin-bottom: 50px;
+}
+main .section-about-us .container-img-cel {
+  max-width: 360px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  margin: -60px auto 0;
+}
+main .section-about-us .container-img-cel .img-cel {
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+}
+main .section-about-us .content {
+  padding: 27px 16px 54px;
+  max-width: 1120px;
+}
+main .section-about-us .content .title-section-info {
+  padding-bottom: 8px;
+}
+main .section-about-us .content .description {
+  padding-bottom: 8px;
+}
+main .section-interviews {
+  width: 100%;
+  margin-bottom: 48px;
+}
+main .section-interviews .title-images {
+  padding: 0px 16px 14px;
+}
+main .section-interviews .container-images {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .section-interviews .container-images .box-image {
+  width: 100%;
+  max-width: 600px;
+  max-height: 455px;
+  line-height: 0;
+}
+main .section-interviews .container-images .box-image img {
+  width: 100%;
+  object-fit: cover;
+}
+main .section-topics {
+  width: 100%;
+}
+main .section-topics .title-topics {
+  padding: 0px 16px 24px;
+}
+main .section-topics .container-group-topics {
+  width: 100%;
+}
+main .section-topics .container-group-topics .container-topic {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 52px;
+}
+main .section-topics .container-group-topics .container-topic:last-of-type {
+  margin-bottom: 42px;
+}
+main .section-topics .container-group-topics .container-topic .box-icon {
+  max-width: 320px;
+  max-height: 130px;
+}
+main .section-topics .container-group-topics .container-topic .box-icon img {
+  width: 100%;
+  object-fit: cover;
+}
+main .section-topics .container-group-topics .container-topic .description-of-icon {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  width: 288px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.section-latest-news {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 11%, 100% 0, 100% 100%, 0% 100%);
+  background-color: #0000EC;
+}
+.section-latest-news .container-latest-news {
+  min-height: 340px;
+  padding-top: 64px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.section-latest-news .container-latest-news .title-latest-news {
+  z-index: 4;
+  color: #fff;
+  text-align: center;
+  margin: 0 16px;
+}
+.section-latest-news .container-latest-news .button-final {
+  z-index: 4;
+  max-width: 345px;
+  padding: 13px 43px;
+  margin: 36px 16px 67px;
+  align-self: center;
+}
+.section-latest-news .container-latest-news .button-final:hover {
+  cursor: pointer;
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  margin: 24px 0px 31px;
+}
+footer .container-footer {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+footer .container-footer .line-final {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding: 0 46px 16px;
+  font-weight: 400;
+  text-align: center;
+}
+footer .container-footer .container-logos-social-media {
+  display: flex;
+  margin: 0 45px;
+  max-width: 600px;
+}
+footer .container-footer .container-logos-social-media .icono {
+  width: 16px;
+  height: 28px;
+  padding-right: 54px;
+}
+footer .container-footer .container-logos-social-media .icono:last-of-type {
+  padding-right: 0;
+}
+
+@media (min-width: 1440px) {
+  header .container-header {
+    padding: 26px 100px;
+    width: 100%;
+  }
+  header .container-header .box-logo {
+    width: 36px;
+    height: 36px;
+  }
+  header .container-header .menu-hamburguesa .input-menu {
+    display: none;
+  }
+  header .container-header .menu-hamburguesa .label-menu {
+    display: none;
+  }
+  header .container-header .menu-hamburguesa .menu-desplegable {
+    display: block;
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+  }
+  header .container-header .menu-hamburguesa .menu-desplegable .list-menu {
+    display: flex;
+    marging-bottom: 0px;
+  }
+  header .container-header .menu-hamburguesa .menu-desplegable .list-menu li {
+    background-color: #fff;
+    padding: 0px;
+    padding-right: 48px;
+  }
+  header .container-header .menu-hamburguesa .menu-desplegable .list-menu li .links-menu {
+    color: #060A24;
+    padding: 0;
+  }
+  header .container-header .menu-hamburguesa .menu-desplegable .list-menu li:last-of-type {
+    padding-right: 0px;
+  }
+  header .container-header .menu-hamburguesa .menu-desplegable .list-menu li > .links-menu:hover {
+    text-decoration-line: line-through;
+    color: #00F3BB;
+  }
+
+  .background-blue::after {
+    top: 70px;
+  }
+
+  .subtitles {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  main .container-intro {
+    flexwrap: wrap;
+    padding: 0px 200px;
+    margin-top: 120px;
+  }
+  main .container-intro .title-intro {
+    font-size: 64px;
+    padding-left: 0;
+    line-height: 64px;
+  }
+  main .container-intro .title-intro br {
+    display: none;
+  }
+  main .container-intro .description {
+    padding: 0;
+    width: 628px;
+  }
+  main .container-intro .button-intro {
+    width: 100%;
+    font-size: 18px;
+    padding: 16px 0px;
+    margin: 0;
+    margin-top: 52px;
+  }
+  main .section-episodes {
+    padding: 170px 100px;
+    margin: 0;
+  }
+  main .section-episodes .tittle-episodios {
+    padding: 0px 100px 26px;
+  }
+  main .section-episodes .container-episodios {
+    margin: -36px;
+    padding: 0;
+  }
+  main .section-episodes .container-episodios .box-episodio {
+    width: 50%;
+    max-width: 584px;
+    margin: 0px;
+    padding: 36px;
+  }
+  main .section-episodes .container-episodios .box-episodio:last-child {
+    margin: 0px;
+  }
+  main .section-about-us {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  main .section-about-us .container-img-cel {
+    max-width: 460px;
+    max-height: 665px;
+    margin: -50px 62px 0 200px;
+  }
+  main .section-about-us .content {
+    padding: 27px 16px 54px;
+  }
+  main .section-about-us .content .title-section-info {
+    padding: 8px 0 24px;
+  }
+  main .section-about-us .content .description {
+    width: 464px;
+  }
+  main .section-interviews {
+    margin: 64px 0;
+    padding-top: 50px;
+  }
+  main .section-interviews .title-images {
+    padding: 0px 200px 36px;
+  }
+  main .section-interviews .container-images .box-image {
+    width: 33%;
+  }
+  main .section-topics .title-topics {
+    padding: 0px 200px 56px;
+  }
+  main .section-topics .container-group-topics {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  main .section-topics .container-group-topics .container-topic {
+    width: 260px;
+    height: 130px;
+    margin-bottom: 0;
+  }
+  main .section-topics .container-group-topics .container-topic:last-of-type {
+    margin-bottom: 0px;
+  }
+  main .section-topics .container-group-topics .container-topic .box-icon {
+    max-width: 260px;
+    padding-bottom: 16px;
+  }
+
+  .section-latest-news {
+    clip-path: polygon(0 32%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: 34px;
+  }
+  .section-latest-news .container-latest-news {
+    padding-top: 0px;
+    align-content: center;
+  }
+  .section-latest-news .container-latest-news .title-latest-news {
+    text-align: center;
+    margin: 213px auto 0;
+  }
+  .section-latest-news .container-latest-news .button-final {
+    z-index: 4;
+    margin: 36px auto 151px;
+    width: 345px;
+  }
+
+  footer {
+    margin: 36px 0px 31px;
+  }
+  footer .container-footer {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  footer .container-footer .line-final {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 100px;
+  }
+  footer .container-footer .container-logos-social-media {
+    margin: 0 100px;
+  }
+  footer .container-footer .container-logos-social-media .icono {
+    width: 18px;
+    padding-right: 52px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

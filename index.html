@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jefer Giraldo">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <title>Podcast</title>
+</head>
+<body>
+  <!-- Inicio del Header -->
+  <header>
+    <div class="container-header">
+      <figure class="box-logo">
+        <img src="./assets/Logos/logo.svg" alt="Logo del Podcast Channel" class="logo-podcast">
+      </figure>
+      <div class="menu-hamburguesa">
+        <input type="checkbox" id="menu" class="input-menu">
+        <label for="menu" class="label-menu">
+          <div class="custom-bars"></div>
+        </label>
+        <nav class="menu-desplegable">
+          <ul class="list-menu">
+            <li><a href="#episodios" class="links-menu">Episodios</a></li>
+            <li><a href="#nosotros" class="links-menu">Nosotros</a></li>
+            <li><a href="#entrevistas" class="links-menu">Entrevistas</a></li>
+            <li><a href="#topicos" class="links-menu">Tópicos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+   <!-- Inicio del main -->
+  <main>
+     <!-- Sección de Introducción -->
+    <section class="container-intro">
+      <h1 class="title-intro">Hello <del>world</del> <br> pale blue dot.</h1>
+      <p class="description">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+      <button class="box-button button-intro">Conoce más</button>
+    </section>
+     <!-- Sección de Episodios -->
+    <section class="section-episodes background-blue" id="episodios">
+      <h2 class="subtitles tittle-episodios">Episodios</h2>
+      <div class="container-episodios">
+        <div class="box-episodio">
+          <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="box-episodio">
+          <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="box-episodio">
+          <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="box-episodio">
+          <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Sección de Información sobre Nosotros -->
+    <section class="section-about-us" id="nosotros">
+      <figure class="container-img-cel">
+        <img src="./assets/images/phone.png" class="img-cel" alt="Imagen de celular blanco visualizando una noticia">
+      </figure>
+      <div class="content">
+        <h2 class="subtitles title-section-info">De dónde venimos</h2>
+        <p class="description">
+          Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
+        </p>
+        <p class="description">
+          Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+        </p>
+      </div>
+    </section>
+    <!-- Sección de Entrevistas -->
+    <section class="section-interviews" id="entrevistas">
+      <h2 class="subtitles title-images">Invitadas/os estelares</h2>
+      <div class="container-images">
+        <figure class="box-image">
+          <img src="./assets/images/grace-hopper.png" alt="Foto de Grace hopper">
+        </figure>
+        <figure class="box-image">
+          <img src="./assets/images/Katie-Bouman.png" alt="Foto de Katie Bouman">
+        </figure>
+        <figure class="box-image">
+          <img src="./assets/images/Margaret_Hamilton.png" alt="Foto de Margaret Hamilton">
+        </figure>  
+        <figure class="box-image">
+          <img src="./assets/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Imagen de un Computador en los años 50">
+        </figure>
+        <figure class="box-image">
+          <img src="./assets/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Imagen de operadores informáticos con un Eniac">
+        </figure>
+        <figure class="box-image">
+          <img src="./assets/images/susan-kare.png" alt="Foto de Susan kare">
+        </figure>
+      </div>
+    </section>
+    <!-- Sección de Topicos -->
+    <section class="section-topics" id="topicos">
+      <h2 class="subtitles title-topics">Algunos de nuestros temas</h2>
+      <div class="container-group-topics">
+        <div class="container-topic  topic-1">
+          <figure class="box-icon icon-1">
+            <img src="./assets/Logos/icon1.svg" alt="Icono de diferentes documentos guardados en un solo archivo">
+          </figure>
+          <span class="description-of-icon">Trabajo Remoto</span>
+        </div>
+        <div class="container-topic topic-2">
+          <figure class="box-icon icon-2">
+            <img src="./assets/Logos/icon2.svg" alt="Icono de una mente adquiriendo información">
+          </figure>
+          <span class="description-of-icon">Repensando la programación</span>
+        </div>
+        <div class="container-topic topic-3">
+          <figure class="box-icon icon-3">
+            <img src="./assets/Logos/icon3.svg" alt="Icono de un portatil con código en la pantalla">
+          </figure>
+          <span class="description-of-icon">Bases del código</span>
+        </div>
+        <div class="container-topic topic-4">
+          <figure class="box-icon icon-4">
+            <img src="./assets/Logos/icon4.svg" alt="Icono de una base de datos protegida">
+          </figure>
+          <span class="description-of-icon">Seguridad informática</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Sección de Ultimas Noticias -->
+  <aside class="section-latest-news">
+    <div class="container-latest-news">
+      <h2 class="subtitles title-latest-news">¿Querés las últimas novedades?</h2>
+      <button class="box-button button-final">Escuchá los episodios</button>
+    </div>
+  </aside>
+  <!-- Inicio del footer -->
+  <footer>
+    <div class="container-footer">
+      <h4 class="line-final">© 2019— Hello blue pale dot</h4>
+      <div class="container-logos-social-media">
+        <i class="icono fab fa-spotify"></i>
+        <i class="icono fab fa-instagram"></i>
+        <i class="icono fab fa-twitter"></i>
+        <i class="icono fab fa-facebook"></i>
+        <i class="icono fab fa-telegram"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

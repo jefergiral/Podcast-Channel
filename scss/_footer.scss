@@ -1,0 +1,35 @@
+// Estilos al Footer
+footer {
+  width: 100%;
+  margin: 24px 0px 31px;
+  .container-footer {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .line-final {
+      font-family: $font-paragraphs;
+      font-size: 14px;
+      color: $letter-color;
+      letter-spacing: 0;
+      line-height: 22px;
+      padding: 0 46px 16px;
+      font-weight: 400;
+      text-align: center;
+    }
+    .container-logos-social-media {
+      display: flex;
+      margin: 0 45px;
+      max-width: 600px;
+      .icono {
+        width: 16px;
+        height: 28px;
+        padding-right: 54px;
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
