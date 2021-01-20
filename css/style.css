@@ -257,6 +257,9 @@ main .section-topics .title-topics {
 }
 main .section-topics .container-group-topics {
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 main .section-topics .container-group-topics .container-topic {
   display: flex;
