@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -46,7 +45,7 @@
   text-transform: uppercase;
   color: #060A24;
   background-color: #00F3BB;
-  font-weight: 600;
+  font-weight: 500;
   border: none;
   opacity: 100%;
   margin: 20px 16px;
@@ -169,12 +168,12 @@ main .container-intro .title-intro {
 main .container-intro .description {
   padding: 16px;
 }
-main .button-intro {
+main .container-intro .button-intro {
   z-index: 1;
   align-self: left;
   padding: 13px 96px;
 }
-main .button-intro:hover {
+main .container-intro .button-intro:hover {
   cursor: pointer;
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #fff;
@@ -194,11 +193,11 @@ main .section-episodes .container-episodios {
   position: relative;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   z-index: 2;
 }
 main .section-episodes .container-episodios .box-episodio {
-  margin: 11px;
-  width: 100%;
+  margin: 0 11px;
   max-width: 600px;
 }
 main .section-episodes .container-episodios .box-episodio:last-child {
@@ -395,6 +394,11 @@ footer .container-footer .container-logos-social-media .icono:last-of-type {
   header .container-header .menu-hamburguesa .menu-desplegable .list-menu li > .links-menu:hover {
     text-decoration-line: line-through;
     color: #00F3BB;
+  }
+  header .container-header .menu-hamburguesa .menu-desplegable .list-menu li > .links-menu:active {
+    text-decoration: line-through;
+    color: #060A24;
+    opacity: 56%;
   }
 
   .background-blue::after {

@@ -18,16 +18,16 @@ main {
     .description {
       padding: 16px;
     }
-  }
-  .button-intro {
-    z-index: 1;
-    align-self: left;
-    padding: 13px 96px;
-  }
-  .button-intro:hover {
-    cursor: pointer;
-    background-image: $background-button-hoover;
-    color: $primary-color;
+    .button-intro {
+      z-index: 1;
+      align-self: left;
+      padding: 13px 96px;
+    }
+    .button-intro:hover {
+      cursor: pointer;
+      background-image: $background-button-hoover;
+      color: $primary-color;
+    }
   }
   // Estilos a la seccion de Episodios 
   .section-episodes {
@@ -45,10 +45,10 @@ main {
       position: relative;
       display: flex;
       flex-flow: row wrap;
+      justify-content: center;
       z-index: 2;
       .box-episodio {
-        margin: 11px;
-        width: 100%;
+        margin: 0 11px;
         max-width: 600px;
         &:last-child {
           margin-bottom: 50px;
