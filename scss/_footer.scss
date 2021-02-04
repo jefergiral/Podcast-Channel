@@ -22,12 +22,15 @@ footer {
       display: flex;
       margin: 0 45px;
       max-width: 600px;
-      .icono {
-        width: 16px;
-        height: 28px;
+      a {
         padding-right: 54px;
         &:last-of-type {
           padding-right: 0;
+        }
+        .icono {
+          width: 16px;
+          height: 28px;
+          color: $letter-color;
         }
       }
     }
