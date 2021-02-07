@@ -25,7 +25,7 @@
           width: auto;
           .list-menu {
             display: flex;
-            marging-bottom: 0px;
+            margin-bottom: 0px;
             li {
               background-color: $primary-color;
               padding: 0px;
@@ -70,7 +70,7 @@
   main {
     // Estilos desktop a la seccion inicial 
     .container-intro {
-      flexwrap: wrap;
+      flex-wrap: wrap;
       padding: 0px 200px;
       margin-top: 120px;
       .title-intro {
@@ -189,8 +189,10 @@
       }
       .button-final {
         z-index: 4;
-        margin: 36px auto 151px;
         width: 345px;
+        font-size: 18px;
+        margin: 36px auto 151px;
+        padding: 17px 0;
       }
     }
   }
